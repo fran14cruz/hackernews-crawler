@@ -12,7 +12,7 @@ from scraper import scrape_hacker_news
 @pytest.fixture
 def mock_hacker_news(mocker):
     mock_response = mocker.patch('requests.get')
-    with open('./mocks/hacker_news_page.html', 'r') as f:
+    with open('tests/mocks/hacker_news_page.html', 'r') as f:
         mock_response.return_value.text = f.read()
 
 def test_scraper_returns_correct_number_of_entries(mock_hacker_news):
