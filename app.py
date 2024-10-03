@@ -27,4 +27,4 @@ def filter_five_or_less_words():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

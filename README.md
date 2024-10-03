@@ -38,7 +38,8 @@ Make sure you have Python 3.x installed on your machine.
 pip install -r requirements.txt
 ```
 Note: I recommend using a virtual environment so that versions of packages keep isolated for this project.
-See the notes below for instructions on how to set up a virtual environment.<br>
+See the notes below for instructions on how to set up a virtual environment.
+
 3. Run the Flask app:
 ```
 python app.py
