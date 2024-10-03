@@ -48,9 +48,10 @@ python app.py
 Here you can view and interact with the filtering functionality.
 5. The routes used for this application are:
    - '/' renders a simple html template
-   - '/scrape' displays the 30 first entries pulled from Hacker News
-   - '/filter/more_than_five_words' filters entries with titles longer than 5 words, ordered by number of comments
-   - '/filter/five_or_less_words' filters entries with titles with 5 or fewer words, ordered by points
+   - '/scrape' rendered html displaying the 30 first entries pulled from Hacker News
+   - '/filter/more_than_five_words' rendered html displaying filtered entries with titles longer than 5 words, ordered by number of comments
+   - '/filter/five_or_less_words' rendered html displaying filtered entries with titles with 5 or fewer words, ordered by points
+6. The project is hosted here https://hackernews-crawler.onrender.com/
 
 ## Running the Tests
 The project includes automated tests using pytest.
