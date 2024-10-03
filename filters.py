@@ -1,3 +1,10 @@
+"""
+File name: filters.py
+Author: Francisco Cruz
+Created: 02-10-2024
+Version: 1.0
+Description: This script contains logic for filtering Hacker News entries
+"""
 # Import statements
 import re
 
