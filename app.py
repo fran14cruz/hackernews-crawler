@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template
 from scraper import scrape_hacker_news
 from filters import filter_by_word_count
 
@@ -16,15 +16,14 @@ def scrape():
 @app.route('/filter/more_than_five_words') # route to filter entries
 def filter_more_than_five_words():
     entries = scrape_hacker_news()
-    filtered = filter_by_word_count(entries, True)
-    return jsonify(filtered)
+    filtered_entries = filter_by_word_count(entries, True)
+    return render_template('filtered.html', entries=filtered_entries, filter_type="More than 5 words")
 
-@app.route('/filter/five_or_less_words')
+@app.route('/filter/five_or_less_words') # route to filter entries
 def filter_five_or_less_words():
     entries = scrape_hacker_news()
-    filtered = filter_by_word_count(entries, False)
-    return jsonify(filtered)
-
+    filtered_entries = filter_by_word_count(entries, False)
+    return render_template('filtered.html', entries=filtered_entries, filter_type="5 or fewer words")
 
 if __name__ == '__main__':
     app.run()
