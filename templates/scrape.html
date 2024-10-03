@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scraped Entries</title>
+</head>
+<body>
+    <h1>Scraped Hacker News Entries</h1>
+    <ul>
+        {% for entry in entries %}
+        <li>
+            <b>{{ entry.number }}.</b> {{ entry.title }}
+            <p>{{ entry.points }} points | {{ entry.comments }} comments</p>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go back</a>
+</body>
+</html>

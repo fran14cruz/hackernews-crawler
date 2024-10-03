@@ -11,7 +11,7 @@ def home():
 @app.route('/scrape') # route to retrieve entries
 def scrape():
     entries = scrape_hacker_news()
-    return jsonify(entries)
+    return render_template('scrape.html', entries=entries)
 
 @app.route('/filter/more_than_five_words') # route to filter entries
 def filter_more_than_five_words():
