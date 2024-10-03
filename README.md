@@ -32,19 +32,19 @@ The main functionality includes:
 Make sure you have Python 3.x installed on your machine.
 
 ### Running the Web Crawler
-1. Clone the repository into your local machine and go the project folder, i.e. ```cd /hackernews-crawler```
+1. Clone the repository into your local machine and go the project folder, i.e. ```cd hackernews-crawler```
 2. Once on the project folder, install the required dependencies by running:
 ```
 pip install -r requirements.txt
-``` 
+```
 Note: I recommend using a virtual environment so that versions of packages keep isolated for this project.
-See the notes below for instructions on how to set up a virtual environment.\
+See the notes below for instructions on how to set up a virtual environment.
 3. Run the Flask app:
 ```
 python app.py
 ```
 4. Access the web interface at http://localhost:5000/. 
-Here, you can view and interact with the filtering functionality.
+Here you can view and interact with the filtering functionality.
 5. The routes used for this application are:
    - '/' renders a simple html template
    - '/scrape' displays the 30 first entries pulled from Hacker News
@@ -67,7 +67,7 @@ This project is licensed under the MIT License.
 ## Set Up a Virtual Environment
 1. Go to the project folder with:
 ```
-cd myproject
+cd hackernews-crawler
 ```
 2. Create a virtual environment by running:
 ```
